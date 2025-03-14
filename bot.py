@@ -108,11 +108,12 @@ async def updates(message: Updates):
             # ساخت کپشن برای ۵ آهنگ
             caption = "🎵 **نتایج جستجو:**\n\n"
             for i, result in enumerate(results, start=1):
-                caption += (
+                 caption += (
                    
-                    f"📅 **تاریخ انتشار:** {result['date']}\n"
-                    f"🎶 **لینک پخش آنلاین:** {result['audio']}\n\n"
+                    f"📅 تاریخ انتشار: {result['date']}\n"
+                    f"🎶 لینک پخش آنلاین: {result['audio']}\n\n"
                 )
+                
             
             
             image_url = results[0]['image']
